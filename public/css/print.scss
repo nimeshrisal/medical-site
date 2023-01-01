@@ -1,0 +1,165 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+html,
+body {
+    height: 99%;
+    // width: 68.65650068656501em;
+    // height: 48.18000048180001em;
+    // margin: 17mm 8.7mm 0mm;
+}
+
+@font-face {
+    font-family: 'Kalimati';
+    src: url('../font/Kalimati.ttf');
+    src:
+        url('../font/Kalimati.woff') format('woff'),
+        url('fontname.ttf') format('truetype'),
+        url('../font/Kalimati.svg#kalimati') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    font-size: 14px;
+    &.np-lang {
+        font-family: 'Kalimati', 'IBM Plex Sans', sans-serif;
+    }
+    .np-lang {
+        font-family: 'Kalimati', 'IBM Plex Sans', sans-serif;
+    }
+    &.en-lang {
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    .en-lang {
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+}
+
+
+.content-wrapper{
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.madyam-idcard-wrapper {
+    height: auto;
+    padding: 15px;
+}
+
+.samanya-idcard-wrapper {
+    height: 100%;
+    padding: 10px 15px;
+    line-height: 1.2;
+}
+
+.samanya-idcard-wrapper .input-padder {
+    margin-left: 15px;
+}
+
+.idcard-border {
+    padding: 0 5px;
+    height: 100%;
+}
+
+.id-photo-frame {
+    border: 1px solid #000;
+    float: right;
+    height: 120px;
+    width: 100px;
+    margin-left: -100px !important;
+}
+
+.id-title {
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.id-title h1 {
+    font-size: 18px;
+    /*-webkit-text-stroke: 1px rgba(255,255,255,0.3);*/
+    margin: 0px;
+    font-weight: bold;
+}
+
+.id-title h2 {
+    background: #e4e3e3;
+    color: #FE0303;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px 20px;
+    display: table;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.id-title p {
+    font-size: 14px;
+    /*-webkit-text-stroke: 1px rgba(255,255,255,0.4);*/
+    margin: 0 0 5px 0;
+}
+
+.id-body {
+    padding: 0 5px;
+    font-weight: bold;
+    color: #000;
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+/*.id-body .form-control {
+      background: transparent;
+      border: 0px;
+      border-bottom: 2px dotted #333;
+      padding: 0px;
+      border-radius: 0;
+  }
+  .id-body .form-control:focus{
+      box-shadow: 0px !important;
+  }*/
+.note-nepali {
+    color: #000;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.note {
+    color: #000;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/*** Id Card Back ***/
+.print-size-back,
+.print-size-front {
+    width: 550px;
+}
+
+.idcard-back {
+    padding: 5px;
+    font-weight: bold;
+    color: #000;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.stamp-box p {
+    text-align: center;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+.stamp-box-border {
+    border: 2px solid #000;
+    width: 100%;
+    height: 117px;
+}
