@@ -13,17 +13,18 @@
 	<!-- Place favicon.ico in the root directory -->
 
 	<!-- CSS here -->
-	<link rel="stylesheet" href="../site/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../site/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="../site/css/magnific-popup.css">
-	<link rel="stylesheet" href="../site/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../site/css/themify-icons.css">
-	<link rel="stylesheet" href="../site/css/nice-select.css">
-	<link rel="stylesheet" href="../site/css/flaticon.css">
-	<link rel="stylesheet" href="../site/css/gijgo.css">
-	<link rel="stylesheet" href="../site/css/animate.css">
-	<link rel="stylesheet" href="../site/css/slicknav.css">
-	<link rel="stylesheet" href="../site/css/style.css">
+    {{-- {{dd(asset('public/site/css/bootstrap.min.css'))}} --}}
+	<link rel="stylesheet" href="{{asset('/site/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/magnific-popup.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/themify-icons.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/nice-select.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/flaticon.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/gijgo.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/animate.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/slicknav.css')}}">
+	<link rel="stylesheet" href="{{asset('/site/css/style.css')}}">
 	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
