@@ -7,7 +7,7 @@
         enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="st-set">
-            <div class="st-set-title">Add Appointments
+            <div class="st-set-title">Add Doctors
             </div>
             <div class="st-body">
                 <div class="row">
