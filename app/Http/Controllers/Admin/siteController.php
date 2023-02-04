@@ -48,6 +48,18 @@ class siteController extends Controller
         $crud->email = $request->email;
         $crud->title = $request->title;
         $crud->description = $request->description;
+        if($request->file('logo') != NULL){
+        $fileName = time().'_'.$request->file('logo')->getClientOriginalName();
+        $filePath = $request->file('logo')->storeAs('uploads/site', $fileName, 'public');
+        $crud->logo = $filePath;
+        }
+
+        if($request->file('profile') != NULL)
+        {
+            $fileName = time().'_'.$request->file('profile')->getClientOriginalName();
+            $filePath = $request->file('profile')->storeAs('uploads/site',$fileName,'public');
+            $crud->profile = $filePath;
+        }
 
         $crud->save();
 

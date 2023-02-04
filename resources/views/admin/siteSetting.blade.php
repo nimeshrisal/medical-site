@@ -60,6 +60,29 @@
                 </div>
             </div>
             <div class="st-set">
+                <div class="st-set-title">Logo and Profile Picture
+                </div>
+                <div class="st-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Logo</label>
+                                <input type="file" class="dropify" name="logo" />
+                                <img src="{{url('/storage/'.$siteData->logo)}}" style="width: 80px;">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Profile Picture<span class="text-danger">&nbsp;*</span></label>
+                                <input type="file" class="dropify" name="profile" />
+                                <img src="{{url('/storage/'.$siteData->profile)}}" style="width: 80px;">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="st-set">
                 <div class="st-body">
                     <div class="row">
                     </div>

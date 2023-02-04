@@ -13,7 +13,13 @@
                 <span class="menu-title">Doctors</span>
                 {{-- <i class="menu-arrow"></i> --}}
               </a>
-
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('slider.index')}}" aria-expanded="false" aria-controls="">
+                <i class="mdi mdi-image menu-icon"></i>
+                <span class="menu-title">Slider</span>
+                {{-- <i class="menu-arrow"></i> --}}
+              </a>
             </li>
             
             <li class="nav-item">

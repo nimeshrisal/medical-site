@@ -90,7 +90,7 @@ class categoryController extends Controller
     {
         $crud = Category::findorFail($id);
         $crud->delete();
-        return redirect()->route('categories.index')->with('status','Successful');
+        return back()->with('status','Successful');
 
     }
 }

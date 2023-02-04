@@ -4,10 +4,10 @@
             <div class="col-xl-6 col-lg-6">
                 <div class="welcome_thumb">
                     <div class="thumb_1">
-                        <img src="img/about/1.png" alt="">
+                        <img src="site/img/about/1.png" alt="">
                     </div>
                     <div class="thumb_2">
-                        <img src="img/about/2.png" alt="">
+                        <img src="site/img/about/2.png" alt="">
                     </div>
                 </div>
             </div>

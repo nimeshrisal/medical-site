@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\blogsController;
 use App\Http\Controllers\Admin\categoryController;
 use App\Http\Controllers\Admin\doctorController;
 use App\Http\Controllers\Admin\servicesController;
+use App\Http\Controllers\Admin\SliderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -55,6 +56,9 @@ Route::post('blogs/update/{id}','App\Http\Controllers\Admin\blogsController@upda
 Route::resource('services',servicesController::class);
 Route::post('services/update/{id}','App\Http\Controllers\Admin\servicesController@update')->name('services.update');
 
+Route::resource('slider',SliderController::class);
+Route::post('slider/update/{id}','App\Http\Controllers\Admin\SliderController@update')->name('slider.update');
+Route::get('slider/delete/{id}','App\Http\Controllers\Admin\SliderController@destroy')->name('slider.delete');
 
 Route::get('categories/index','App\Http\Controllers\Admin\categoryController@index')->name('categories.index');
 Route::post('categories/store','App\Http\Controllers\Admin\categoryController@store')->name('categories.store');
