@@ -44,6 +44,14 @@
                 {{-- <i class="menu-arrow"></i> --}}
               </a>
             </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('testimonial.index')}}" aria-expanded="false" aria-controls="">
+                <i class="mdi mdi-speaker menu-icon"></i>
+                <span class="menu-title">Testimonials</span>
+                {{-- <i class="menu-arrow"></i> --}}
+              </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="{{route('appointments.index')}}" aria-expanded="false" aria-controls="">
                 <i class="mdi mdi-account-plus menu-icon"></i>

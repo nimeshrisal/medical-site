@@ -1,9 +1,9 @@
 @include('admin.includes.sidebar')
 				<div class="main-panel">
 				    <div class="content-wrapper alert_message">
-					@if (Session::has('status'))
+					@if (Session::has('success'))
 					    <div class="alert alert-success alert-dismissible" role="alert">
-					        {{ Session::get('status') }}
+					        {{ Session::get('success') }}
 					        <!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
 					    </div>
 					@endif

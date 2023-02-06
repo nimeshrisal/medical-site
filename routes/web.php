@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\categoryController;
 use App\Http\Controllers\Admin\doctorController;
 use App\Http\Controllers\Admin\servicesController;
 use App\Http\Controllers\Admin\SliderController;
+use App\Http\Controllers\Admin\TestimonialsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -59,6 +60,10 @@ Route::post('services/update/{id}','App\Http\Controllers\Admin\servicesControlle
 Route::resource('slider',SliderController::class);
 Route::post('slider/update/{id}','App\Http\Controllers\Admin\SliderController@update')->name('slider.update');
 Route::get('slider/delete/{id}','App\Http\Controllers\Admin\SliderController@destroy')->name('slider.delete');
+
+Route::resource('testimonial',TestimonialsController::class);
+Route::post('testimonial/update/{id}','App\Http\Controllers\Admin\TestimonialsController@update')->name('testimonial.update');
+Route::get('testimonial/delete/{id}','App\Http\Controllers\Admin\TestimonialsController@destroy')->name('testimonial.delete');
 
 Route::get('categories/index','App\Http\Controllers\Admin\categoryController@index')->name('categories.index');
 Route::post('categories/store','App\Http\Controllers\Admin\categoryController@store')->name('categories.store');
